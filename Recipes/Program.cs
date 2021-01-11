@@ -17,6 +17,7 @@ namespace Recipes
             inp = inp.ToUpper();
             Console.ResetColor();
 
+            //Creates another object for method ContaintTitle in order not to get the changes made from first method 
             Title t2 = new Title();
             if (t2.ContainTitle(inp))
             {
@@ -59,10 +60,12 @@ namespace Recipes
             inpYes = inpYes.ToLower();
             Console.ResetColor();
 
+            //Used to make recursion of main method
             if (inpYes == "yes")
                 RecipeCard.Main(args);
         }
 
+        //A method to display an entire line with chosen color
         static void WriteFullLine(string value)
         {
             Console.BackgroundColor = ConsoleColor.Blue;
