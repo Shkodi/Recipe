@@ -6,6 +6,7 @@ namespace Recipes
 {
     class MealType : Ingredients
     {
+        //An array of strings which contains type of meals
         private string[] type = 
         {
             "Breakfast", 
@@ -22,6 +23,7 @@ namespace Recipes
         {
         }
 
+        //Decides which recipe what type of meal is
         public string TypeOfMeal(string s)
         {
             for (int i = 0; i < mealName.Length; i++)
@@ -50,6 +52,7 @@ namespace Recipes
             return null;
         }
 
+        //Gets value from TypeOfMeal and displays it to console / writes to file
         public void MyToStrM(string s)
         {
             MealType m = new MealType();
@@ -57,6 +60,7 @@ namespace Recipes
             File.AppendAllText("../../../../../MyRecipe.txt", "\n\n\tType of meal:\t\t\t" + m.TypeOfMeal(s));
         }
 
+        //A similar to the method above but less accurate 
         //public void TypeOfMeal(string s)
         //{
         //    Console.Write("\n\tType of meal: ");
