@@ -27,7 +27,7 @@ namespace Recipes
         {
             NoOfPeople n = new NoOfPeople();
             Console.WriteLine("\n\tFor:\t\t\t\t" + n.Number(s) + " people");
-            File.AppendAllText("../../../../../MyRecipe.txt", "\n\n\tFor:\t\t\t\t" + n.Number(s) + " people");
+            File.AppendAllText("../../../../../MyRecipe.txt", "\n\n\tFor:\t\t\t\t" + n.Number(s) + " people"); 
         }
     }
 }
