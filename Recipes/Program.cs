@@ -73,7 +73,7 @@ namespace Recipes
 
             Console.WriteLine(value.PadRight(Console.WindowWidth));
 
-            Console.ResetColor();
+            Console.ResetColor(); 
         }
     }
 }
