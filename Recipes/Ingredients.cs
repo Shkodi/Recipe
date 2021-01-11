@@ -5,6 +5,7 @@ namespace Recipes
 {
     class Ingredients : Title
     {
+        //An jagged array where each subarray contains ingredients of correspoding element in mealName array
         protected string[][] ingredName =
         {
             new string[] { "Quick cooking oats", "1/2 cup", "Flax seeds", "1 tsp", "Egg", "1", "Milk", "1/2 cup", "Banana", "1/3 (mashed)", "Cinnamon", "1/4 tsp", "Apple", "1/2 (chopped)", "Honey", "1 tbsp" }, //Oatmeal Cup
@@ -31,6 +32,7 @@ namespace Recipes
         {
         }
 
+        //Makes all elemnts of ingredName same length
         public string IngredientsDisplay()
         {
             Console.WriteLine("\n\tIngredients: ");
@@ -48,6 +50,7 @@ namespace Recipes
             return null;
         }
 
+        //Chooses which subarray will be displayed depending on user input and saves it to file
         public void IngredientsList(string s)
         {
             for (int k = 0; k < mealName.Length; k++)
