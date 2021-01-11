@@ -9,6 +9,7 @@ namespace Recipes
         public NoOfPeople()
         {
         }
+        //Calculate for each recipe, number of peple it serves
         public int Number(string s)
         {
             Random r = new Random();
@@ -20,7 +21,8 @@ namespace Recipes
             else
                 return r.Next(NumOfPer[2], NumOfPer[3]);
         }
-
+        
+        //Gets value from Number and displays it to console / writes to file 
         public void MyToStrN(string s)
         {
             NoOfPeople n = new NoOfPeople();
