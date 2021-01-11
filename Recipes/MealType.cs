@@ -66,7 +66,7 @@ namespace Recipes
         //    Console.Write("\n\tType of meal: ");
         //    for (int i = 0; i < mealName.Length; i++)
         //    {
-        //        mealName[i] = mealName[i].ToUpper();
+        //        mealName[i] = mealName[i].ToUpper(); 
         //        if (s == mealName[i])
         //        {
         //            if (ingredName[i].Contains("Fish"))
