@@ -12,6 +12,7 @@ namespace Recipes
         public Level ()
         {
         }
+        //Decide the difficulty level based in the number of ingredients
         public string AppointLevel(string s)
         {
             for (int i = 0; i < mealName.Length; i++)
@@ -30,6 +31,7 @@ namespace Recipes
             return null;
         }
 
+        //Gets value from AppointLevel and displays it to console / writes to file
         public void MyToStrL(string s)
         {
             Level l = new Level();
