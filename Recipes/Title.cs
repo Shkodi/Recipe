@@ -47,7 +47,7 @@ namespace Recipes
             WriteFullLine(" Choose a recipe in the list below:");
             WriteFullLine(" ");
             Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Green; 
             for (int i = 0; i < mealName.Length; i++)
             {
                 int j = mealName[i].Length;
